@@ -1,4 +1,7 @@
 package com.example.harden_taxes.database
 
-abstract class ApartmentDAO {
+import androidx.room.Dao
+
+@Dao
+interface ApartmentDAO {
 }
