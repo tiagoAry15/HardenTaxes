@@ -7,4 +7,5 @@ data class Condominium (
     val Numero:Int,
     val NumApart:Int,
     val ApartAndar:Int,
+    val Tax:Double
         )

@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id "org.jetbrains.kotlin.kapt"
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -42,6 +43,10 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.room:room-runtime:2.3.0'
     implementation 'at.favre.lib:bcrypt:0.9.0'
+    implementation platform('com.google.firebase:firebase-bom:28.0.1')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-database-ktx'
     def room_version = "2.3.0"
 
     implementation "androidx.room:room-runtime:$room_version"
